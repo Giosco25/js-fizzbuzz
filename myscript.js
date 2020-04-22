@@ -10,12 +10,17 @@ al posto dei multipli sia di 3 che di 5 stampi "FizzBuzz" */
      //multipli 3 e 5  scrivere FizzBuzz
      if (numeri % 3 == 0 && numeri % 5 == 0) {
          console.log('fizzBuzz');
+         document.getElementById('fizz-buzz').innerHTML += ('fizzBuzz <br>');
      } else if(numeri % 3 == 0){
          console.log('fizz');
+         document.getElementById('fizz-buzz').innerHTML += ('fizz <br>');
      // in quelli da 5 la parola buzz
      } else if(numeri % 5 == 0){
         console.log('buzz');
+        document.getElementById('fizz-buzz').innerHTML += ('buzz <br>');
     } else {
         console.log(numeri);
+        document.getElementById('fizz-buzz').innerHTML += (numeri + '<br>');
     }
+
 }
